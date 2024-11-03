@@ -42,7 +42,7 @@ header {
   justify-content: space-between;
   align-items: center;
   transition: 0.2s;
-  height: 4rem;
+  height: 5rem;
 
   .nav1 {
     overflow: hidden;
@@ -76,7 +76,7 @@ header.sticky {
   }
   nav {
     a:hover {
-      border-bottom: 5px solid rgba(233, 26, 61, 0.726);
+     color: gray;
     }
   }
 
@@ -90,34 +90,17 @@ header.sticky {
 
 main {
   background-image: url("img/ai-7977960_1280.jpg");
-  min-height: 36rem;
+  min-height: 26rem;
   width: 100rem;
   align-content: center;
-
-  .fixed {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 18rem;
-    width: 100%;
-    background-color: rgba(250, 253, 255, 0.397);
-
-    h1 {
-      color: white;
-    }
-  }
 }
 
-main,
-header {
+header,main {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
-.container,
-.container2,
-.servicos {
+.container,.container2,.servicos {
   width: 100%;
   min-height: 45vh;
 }
@@ -139,7 +122,7 @@ header {
     border-radius: 7px;
     color: white;
     background-color: rgba(202, 8, 41, 0.726);
-    height: 2rem;
+    height: 2.2rem;
   }
   h2:hover {
     padding: 1.5rem;
@@ -155,22 +138,27 @@ header {
 }
 
 .container2 {
-  padding: 6rem;
+  min-height: 30rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 5em;
+ 
 
   div {
-    align-self: flex-start;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    align-self: center;
     text-align: center;
-    padding: 2rem;
-    width: 16rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    flex-direction: column;
+    width: 16rem;
+    height: 16rem;
+    gap: 1.5rem;
+    flex-shrink: 1;
+    
   }
   div:hover {
     border-radius: 1rem;
@@ -185,9 +173,16 @@ header {
   justify-content: center;
   text-align: center;
   gap: 5rem;
-  padding: 6rem;
+  min-height: 30.9rem;
+  .spn{
+    width: 100%;
+    align-self: center;
+    
+  }
 
   .service {
+   flex-shrink: 1;
+    align-self: center;
     padding: 1em;
     border-radius: 1rem;
     background-color: white;
@@ -195,39 +190,32 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 18rem;
+    max-width: 15rem;
     gap: 1rem;
+    margin-bottom: 5rem;
     i {
       font-size: 4rem;
       color: rgba(202, 8, 41, 0.726);
     }
   }
-  h1 {
-    width: 100%;
-  }
+  
 }
 section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  padding: 8rem;
   width: 100%;
-  h1 {
-    font-size: 2rem;
+  min-height: 40rem;
+  gap: 2rem;
+  .spn1{
+    width: 100%;
     text-align: center;
-    margin-bottom: 2rem;
   }
-
-  .equipe {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-
+ 
     div {
+      margin-bottom: 5rem;
+      align-self: center;
       transition: 0.5s ease;
       background-color: white;
       display: flex;
@@ -236,7 +224,7 @@ section {
       border-top-right-radius: 1rem;
       border-bottom-left-radius: 0.5rem;
       border-bottom-right-radius: 0.5rem;
-      width: 18rem;
+      width: 16rem;
       flex-shrink: 1;
       gap: 0.5rem;
       h4 {
@@ -249,7 +237,7 @@ section {
 
       img {
         border-radius: 1rem;
-        width: 18rem;
+        width: 20rem;
         height: 16em;
         object-fit: cover;
         overflow: hidden;
@@ -264,23 +252,23 @@ section {
       }
       padding: 0.5rem;
     }
-  }
+  
 }
 
 .parceiros {
   width: 100%;
-  padding: 2rem;
+  min-height: 25rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 3rem;
-  min-height: 20rem;
   #tiParceiro {
     width: 100%;
     text-align: center;
   }
   img {
+    margin-bottom: 5rem;
     width: 6em;
     height: 6em;
     object-fit: cover;
@@ -295,13 +283,17 @@ footer {
   background-color: rgb(15, 30, 36);
   color: white;
   width: 100%;
-  padding: 2rem;
+  min-height: 20rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
   div {
-    margin: 0.5rem;
+    align-self: center;
+    margin-left: 0.5rem;
+  }
+  span{
+    align-self: center;
   }
 }
 .inf,
@@ -341,7 +333,7 @@ p {
 }
 
 section,
-.servicos {
+ .servicos{
   background-color: rgba(128, 128, 128, 0.16);
 }
 
