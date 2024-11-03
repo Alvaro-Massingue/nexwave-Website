@@ -46,6 +46,9 @@ header {
 
   .nav1 {
     overflow: hidden;
+    margin-right: 1rem;
+    display: flex;
+    gap: 1rem;
     a {
       text-decoration: none;
       color: white;
@@ -427,4 +430,7 @@ section,
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
+}
+#refresh{
+  margin-left: 1rem;
 }
