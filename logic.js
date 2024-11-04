@@ -9,6 +9,7 @@ var menu = document.getElementById("menu");
 var completo = document.getElementById("completo");
 var h1 = document.getElementById("nexwave");
 var w = document.getElementById("mobileTop");
+var mobile = document.getElementById("mobile");
 
 icon1.addEventListener("click", menuStyle);
 icon2.addEventListener("click", menuStyle);
@@ -22,6 +23,7 @@ function menuStyle() {
     menu.style.display = "flex";
     h1.style.display = "inline-block";
     w.style.width = "16rem";
+    mobile.style.overflow="hidden";
   } else {
     icon2.style.display = "none";
     icon1.style.display = "inline-block";

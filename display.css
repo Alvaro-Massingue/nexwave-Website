@@ -1,8 +1,9 @@
 @media (max-width: 1024px) {
   header {
-    nav {
+    #nav1 {
       display: none;
     }
+   
 
     .mobile {
       display: flex;
