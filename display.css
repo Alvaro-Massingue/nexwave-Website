@@ -16,3 +16,15 @@
     padding: 0;
   }
 }
+@media (max-width: 580px){
+  header{
+    .showMobile1{
+      display: flex;
+    }
+  }
+  main{
+    .showMobile2{
+      display: flex;
+    }
+  }
+}
