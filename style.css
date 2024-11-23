@@ -44,7 +44,6 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  transition: 0.2s;
   height: 5rem;
   overflow: hidden;
   .nav1 {
@@ -70,13 +69,13 @@ header.sticky {
       color: rgba(233, 26, 61, 0.726);
     }
   }
-  .mobile {
+ /* .mobile {
     #mobileTop {
       #bars {
         color: rgba(233, 26, 61, 0.726);
       }
     }
-  }
+  }*/
   #refresh {
     color: rgba(233, 26, 61, 0.726);
   }
@@ -136,7 +135,7 @@ header,main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 5em;
+  gap: 5rem;
   
   div {
     margin-bottom: 10rem;
@@ -280,6 +279,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  
  
   div {
    
@@ -287,6 +287,7 @@ footer {
     min-height: 10rem;
     display: flex;
     flex-wrap: wrap;    
+    
   }
   
 }
@@ -392,7 +393,7 @@ section,
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      margin-top: 500px;
+      margin-top: 300px;
       margin-left: 1rem;
       
 

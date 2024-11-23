@@ -15,6 +15,9 @@
   #nss:hover {
     padding: 0;
   }
+  #container2{
+    gap: 1rem;
+  }
 }
 @media (max-width: 580px){
   header{
