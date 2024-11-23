@@ -3,7 +3,9 @@
     #nav1 {
       display: none;
     }
-   
+   #refresh{
+    display: none;
+   }
 
     .mobile {
       display: flex;
